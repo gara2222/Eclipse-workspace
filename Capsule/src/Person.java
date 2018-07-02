@@ -6,12 +6,12 @@ public class Person {
 	
 	//カプセル化///////////////////////
 	public String getName() {
-		return this.name;	
-	
+		return this.name;
 	}
+	
 	public void setName(String name, int age) {
 		this.name = "太郎";
-		this.age = 0;
+		this.age = 20;
 	}
 	/////////////////////////////////
 }
