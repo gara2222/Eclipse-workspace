@@ -1,4 +1,4 @@
-
+//Personへのインスタンス化
 public class Test {
 
 	public static void main(String[] args) {
@@ -22,8 +22,8 @@ public class Test {
 		System.out.println(Null.age);
 		//コンストラクタ5 (age,name) 年齢と名前を指定する
 		Person hanako = new Person(17,"hanako");
-		System.out.println(hanako.name);
 		System.out.println(hanako.age);
+		System.out.println(hanako.name);
 	}
 
 }
