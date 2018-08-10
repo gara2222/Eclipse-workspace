@@ -4,6 +4,7 @@ public class BuyItemDTO {
 	public int id;
 	public String itemName;
 	public String itemPrice;
+	
 	public int getId() {
 		return id;
 	}
@@ -22,4 +23,6 @@ public class BuyItemDTO {
 	public void setItemPrice(String itemPrice) {
 		this.itemPrice = itemPrice;
 	}
+	
+	
 }

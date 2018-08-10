@@ -5,15 +5,13 @@
 
 <struts>
 	<constant name = "struts.devMode" value="true" />
-<!-- 対象のパッケージを設定する -->
-	<package name = "com.internousdev..ecsite.action" extends="struts-default">
+	<package name = "com.internousdev.ecsite.action" extends="struts-default">
 
 	<action name="GoHomeAction"
 	class="com.internousdev.ecsite.action.GoHomeAction" method = "execute">
 		<result name="success">home.jsp</result>
 	</action>
 
-<!-- 呼び出されるクラスファイルと実行するメゾット(<action>随時追加する) -->
 	<action name = "HomeAction" class = "com.internousdev.ecsite.action.HomeAction"
 	method = "execute">
 		<result name = "login">login.jsp</result>
@@ -32,13 +30,13 @@
 		<result name = "back">login.jsp</result>
 	</action>
 
-	<action name = "UserCreateConfirmAction" class = "com.ecsite.template.action.UserCreateConfirmAction"
+	<action name = "UserCreateConfirmAction" class = "com.internousdev.ecsite.action.UserCreateConfirmAction"
 	method = "execute">
 		<result name = "success">userCreateConfirm.jsp</result>
 		<result name = "error">userCreate.jsp</result>
 	</action>
 
-	<action name="UserCreateCompleteAction" class="com.ecsite.template.action.UserCreateCompleteAction"
+	<action name="UserCreateCompleteAction" class="com.internousdev.ecsite.action.UserCreateCompleteAction"
 	method="execute">
 		<result name="success">userCreateComplete.jsp</result>
 	</action>
@@ -55,10 +53,6 @@
 		<result name="success">buyItemComplete.jsp</result>
 		<result name="back">buyItem.jsp</result> </action>
 
-	<action name="BuyItemCompleteAction" class="com.internousdev.ecsite.action.BuyItemCompleteAction"
-	method="execute">
-	<result name="success">home.jsp</result>
-	</action>
 
 	<action name="MyPageAction" class="com.internousdev.ecsite.action.MyPageAction"
 	method="execute">

@@ -79,7 +79,7 @@
 						</tr>
 						<tr>
 							<td>購入個数</td>
-							<td><s:property value="session.stock"/>
+							<td><s:property value="session.count"/>
 								<span>個</span>
 							</td>
 						</tr>
